@@ -1,0 +1,21 @@
+name: ScythePlugin
+version: 1.0.0
+main: mc.mkay.scythe.ScythePlugin
+api-version: '1.21'
+description: Cherry Blossom Scythe relic for mkaymc — Bloom SMP
+author: mkaymc
+
+commands:
+  givescythe:
+    description: Give the Bloom's Scythe to a player
+    usage: /givescythe [player]
+    permission: scythe.give
+  scythekills:
+    description: Add kills to a player for testing
+    usage: /scythekills <player> <amount>
+    permission: scythe.give
+
+permissions:
+  scythe.give:
+    description: Allows giving the scythe and testing kills
+    default: op
